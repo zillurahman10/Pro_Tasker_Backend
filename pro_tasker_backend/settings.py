@@ -97,24 +97,24 @@ WSGI_APPLICATION = 'pro_tasker_backend.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default': dj_database_url.config(
-#         # Replace this value with your local database's connection string.
-#         default='postgresql://mydb_vqgd_user:pFcPnDFkAPI4rHhGm3Q2qhljCMLQpljx@dpg-cr84jl3qf0us73bpetd0-a/mydb_vqgd',
-        
-#     )
-# }
-
 DATABASES = {
-    'default': {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "pro_tasker",
-        "USER": "postgres",
-        "PASSWORD": "12345",
-        "HOST": "localhost",
-        "PORT": "5432",
-    }
+    'default': dj_database_url.config(
+        # Replace this value with your local database's connection string.
+        default='postgresql://mydb_vqgd_user:pFcPnDFkAPI4rHhGm3Q2qhljCMLQpljx@dpg-cr84jl3qf0us73bpetd0-a/mydb_vqgd',
+        
+    )
 }
+
+# DATABASES = {
+#     'default': {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "pro_tasker",
+#         "USER": "postgres",
+#         "PASSWORD": "12345",
+#         "HOST": "localhost",
+#         "PORT": "5432",
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
