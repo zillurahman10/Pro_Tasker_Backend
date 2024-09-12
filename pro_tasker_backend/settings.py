@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+import os   
 import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,8 +28,10 @@ SECRET_KEY = 'django-insecure-3we1vqi^bpjxuo7pp40sdrv82+4o5x$m+#5t!j=_yz+p^-)qw8
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_ALLOW_ALL = True
 
-CSRF_TRUSTED_ORIGINS = ['https://pro-tasker-backend.onrender.com', 'http://127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://pro-tasker-backend.onrender.com']
 
 
 # Application definition
@@ -150,7 +153,6 @@ USE_TZ = True
 STATIC_URL = 'static/'
 MEDIA_URL = '/media/'
 
-CORS_ORIGIN_ALLOW_ALL = True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
