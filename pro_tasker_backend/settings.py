@@ -31,7 +31,7 @@ ALLOWED_HOSTS = ["*"]
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
 
-CSRF_TRUSTED_ORIGINS = ['https://pro-tasker-backend.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://pro-tasker-backend-1.onrender.com']
 
 
 # Application definition
