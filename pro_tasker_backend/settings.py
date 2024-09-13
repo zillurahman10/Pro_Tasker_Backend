@@ -28,10 +28,9 @@ SECRET_KEY = 'django-insecure-3we1vqi^bpjxuo7pp40sdrv82+4o5x$m+#5t!j=_yz+p^-)qw8
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
 
-CSRF_TRUSTED_ORIGINS = ['https://pro-tasker-backend-1.onrender.com']
+CSRF_TRUSTED_ORIGINS = ['https://pro-tasker-backend-1.onrender.com', ]
 
 
 # Application definition
