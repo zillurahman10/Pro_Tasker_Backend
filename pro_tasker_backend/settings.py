@@ -100,8 +100,7 @@ WSGI_APPLICATION = 'pro_tasker_backend.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config(
         # Replace this value with your local database's connection string.
-        default='postgresql://pro_tasker_user:cXsN3EeLSro5GW9pkIYguLZBLcFnZ4HJ@dpg-crhi1uogph6c73esvn5g-a/pro_tasker',
-        
+        default='postgresql://pro_tasker_rj3m_user:WUOpGomMRnrx67SWu0d0OtQrmtU0TXYp@dpg-cri59f3qf0us739pdh3g-a.oregon-postgres.render.com/pro_tasker_rj3m',
     )
 }
 
